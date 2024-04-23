@@ -153,6 +153,7 @@ int CPUPerformanceInterface::CPUPerformance::cpu_load_total_process(double* cpu_
 int CPUPerformanceInterface::CPUPerformance::cpu_loads_process(double* pjvmUserLoad, double* pjvmKernelLoad, double* psystemTotalLoad) {
 #ifdef __APPLE__
   int result = cpu_load_total_process(psystemTotalLoad);
+
   struct tms buf;
   clock_t jvm_real = times(&buf);
   if (jvm_real == (clock_t) (-1)) {
