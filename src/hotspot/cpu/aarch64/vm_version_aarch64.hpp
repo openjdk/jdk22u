@@ -168,6 +168,8 @@ enum Ampere_CPU_Model {
   static bool supports_fast_class_init_checks() { return true; }
   constexpr static bool supports_stack_watermark_barrier() { return true; }
 
+  constexpr static bool supports_secondary_supers_table() { return true; }
+
   static void get_compatible_board(char *buf, int buflen);
 
   static const SpinWait& spin_wait_desc() { return _spin_wait; }
