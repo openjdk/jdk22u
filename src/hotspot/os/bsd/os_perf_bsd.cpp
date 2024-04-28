@@ -88,7 +88,7 @@ class CPUPerformanceInterface::CPUPerformance : public CHeapObj<mtInternal> {
 CPUPerformanceInterface::CPUPerformance::CPUPerformance() {
 #ifdef __APPLE__
   _jvm_real = 0;
-  _total_csr_nanos= 0;
+  _total_csr_nanos = 0;
   _jvm_context_switches = 0;
   _jvm_user = 0;
   _jvm_system = 0;
