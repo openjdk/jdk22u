@@ -34,11 +34,10 @@ package gc.arguments;
  * @run driver gc.arguments.TestParallelGCErgo
  */
 
+import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import java.util.ArrayList;
-import java.util.Arrays;
 
 import jdk.test.lib.process.OutputAnalyzer;
 import jdk.test.lib.process.ProcessTools;
